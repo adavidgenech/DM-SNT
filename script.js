@@ -1,5 +1,3 @@
-document.body.style.backgroundColor = "blue";
-
 document.addEventListener("DOMContentLoaded", function () {
     function alphaDetect() {
         let video = document.createElement("video");
