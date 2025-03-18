@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <title>SNT</title>
     <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
   </head>
   <body>
   <header>
@@ -13,20 +14,5 @@
     <source src="assets/explosion.webm" type="video/webm">
     Votre navigateur ne supporte pas la vidéo.
   </video>
-  <script>
-    function alphaDetect() {
-        let video = document.createElement("video");
-        return video.canPlayType('video/webm; codecs="vp9"') !== "";
-    }
-
-    if (!alphaDetect()) {
-        let creepVideo = document.getElementById("creep");
-        if (creepVideo) {
-            creepVideo.style.display = "none";
-        } else {
-          console.log("Video explosion non trouvée");
-        }
-    }
-  </script>
   </body>
 </html>
