@@ -1,3 +1,5 @@
+document.body.style.backgroundColor = "blue";
+
 document.addEventListener("DOMContentLoaded", function () {
     function alphaDetect() {
         let video = document.createElement("video");
@@ -5,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (!alphaDetect()) {
-        document.body.style.backgroundColor = "blue";
+        
         let creepVideo = document.getElementById("creep");
         if (creepVideo) {
             creepVideo.style.display = "none";
