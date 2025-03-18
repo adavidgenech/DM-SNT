@@ -5,12 +5,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (!alphaDetect()) {
-        
+        document.body.style.backgroundColor = "blue";
         let creepVideo = document.getElementById("creep");
         if (creepVideo) {
             creepVideo.style.display = "none";
         } else {
           console.log("Video explosion non trouvée");
         }
+    } else {
+        document.body.style.backgroundColor = "red";
     }
 });
